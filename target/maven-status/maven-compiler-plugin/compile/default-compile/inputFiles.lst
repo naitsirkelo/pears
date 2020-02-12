@@ -1,0 +1,17 @@
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/Util.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/models/FnrLoginRequestModel.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/models/BetRequestModel.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/models/OtpLoginRequestModel.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/services/FirebaseService.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/ResourceDefinitions.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/models/JwtRequestModel.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/controllers/JwtController.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/Config.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/controllers/NTController.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/config/WebSecurityConfig.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/RestMethods.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/models/BalanceRequestModel.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/Jwt.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/models/PlayerRequestModel.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/controllers/PassesController.java
+/Users/oleklarsen/backend/src/main/java/no/group42/googlepasses/Backend.java

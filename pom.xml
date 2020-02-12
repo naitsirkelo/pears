@@ -1,44 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>no.ntnu.pearproject</groupId>
-    <artifactId>pears</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
-    <dependencies>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.pears</groupId>
+	<artifactId>pears</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Pears Project</name>
+	<description>Deployed project</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<repositories>
+		<repository>
+			<id>local-maven-repo</id>
+			<url>file:///${project.basedir}/local-maven-repo</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.google.api-services</groupId>
+			<artifactId>google-api-services</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-admin -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>6.12.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.collections</groupId>
+					<artifactId>google-collections</artifactId>
+				</exclusion>
+			</exclusions>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.googlecode.jsontoken/jsontoken -->
+		<dependency>
+			<groupId>com.googlecode.jsontoken</groupId>
+			<artifactId>jsontoken</artifactId>
+			<version>1.0</version>
+
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.10.5</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>5.2.1.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20190722</version>
+		</dependency>
+
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>11.0.2</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>11.0.2</version>
-        </dependency>
-    </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
-                <configuration>
-                    <release>11</release>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.1</version>
-                <configuration>
-                    <mainClass>no.ntnu.pearproject.App</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.googlecode.libphonenumber/libphonenumber -->
+		<dependency>
+			<groupId>com.googlecode.libphonenumber</groupId>
+			<artifactId>libphonenumber</artifactId>
+			<version>8.11.3</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+
+	</build>
+
 </project>
